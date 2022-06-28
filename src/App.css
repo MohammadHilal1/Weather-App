@@ -1,7 +1,49 @@
 .App {
   text-align: center;
+  background: #87CEFA;
+  min-height: 100vh;
+  min-width: 100vw;
 }
-
+.backgroundImageContainer{
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.9;
+}
+.Container{
+  background-color: unset;
+  min-height: 700px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 2px 2px 40px 2px rgb(0, 0, 0, 0.5);
+  padding: 20px;
+  backdrop-filter: blur(3px);
+}
+.dayForcastContainer{
+  display: flex;
+  background-color: transparent;
+  height: auto;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 2px 2px 40px 2px rgb(0, 0, 0, 0.9);
+  padding: 20px;
+  overflow: auto;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+.hourlyForcast{
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 2px 2px 40px 2px rgb(0, 0, 0, 0.9);
+  padding: 8px;
+  background-color: unset;
+ 
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +77,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+* {
+  box-sizing: border-box;
 }
